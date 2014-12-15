@@ -12,8 +12,7 @@ class RealexNotificationTest < Test::Unit::TestCase
     assert @notification.complete?
     assert_equal "Completed", @notification.status
     assert_equal 50.0, @notification.gross
-    # assert_equal "", @notification.currency
-    # assert @notification.test?
+    assert_equal "USD", @notification.currency
   end
 
   def test_compositions
